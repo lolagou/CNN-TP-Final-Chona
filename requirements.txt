@@ -2,4 +2,5 @@ tensorflow
 keras
 pillow
 numpy
-keras-visualizerxs
+streamlit
+keras-visualizer
