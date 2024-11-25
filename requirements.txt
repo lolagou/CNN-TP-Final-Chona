@@ -1,6 +1,0 @@
-tensorflow
-keras
-pillow
-numpy
-streamlit
-keras-visualizer
