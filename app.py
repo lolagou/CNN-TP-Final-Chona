@@ -4,16 +4,14 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
 
-# Cargar el modelo previamente entrenado
-model = load_model('path_al_modelo/modelo_cnn.h5')  # Asegúrate de tener el archivo .h5
+model = load_model("modeloChona.h5") 
 
-# Función para preprocesar la imagen
+
 def preprocess_image(image):
-    image = image.resize((128, 128))  # Ajusta según el tamaño de entrada de tu modelo
+    image = image.resize((128, 128))  
     image = np.array(image) / 255.0
     return np.expand_dims(image, axis=0)
 
-# Interfaz en Streamlit
 st.title("Clasificador de imágenes de gatos y perros")
 st.write("Sube una imagen para clasificar si es un gato o un perro.")
 
